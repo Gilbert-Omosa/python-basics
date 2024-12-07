@@ -1,0 +1,5 @@
+print("Hello, Python!")
+print(10+11)
+print("10+11")
+print("Gilbert", "Otwoma", "Omosa")
+print(20, 30, 40)
