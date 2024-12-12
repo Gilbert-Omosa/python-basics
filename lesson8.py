@@ -59,3 +59,60 @@ phone = {
 }
 
 print(phone)  # Prints the phone dictionary, including the nested "features" dictionary.
+
+
+# Demonstration of sets in Python
+
+# Sets are unordered collections of unique items in Python.
+# Key characteristics of sets:
+# - They are unordered, so items have no defined order and cannot be accessed by index or key.
+# - They are mutable, meaning items can be added or removed, but individual items themselves cannot be changed.
+# - Sets do not allow duplicate values; duplicates are automatically ignored.
+
+# Create a set of friends.
+friends = {"Alfred", "Victor", "Felix", "Esther", "Samuel", "Nick", "Tony", "Richard", "Joe", "Marie"}
+
+print(friends)  # Prints the set. Items may appear in a different order each time due to the unordered nature of sets.
+
+# Sets are unordered and do not support indexing or keys.
+# Items in a set cannot be accessed directly using an index or key.
+
+# Adding an item to the set.
+friends.add("Yvonne")  # Adds "Yvonne" to the set.
+print(friends)  # Prints the updated set.
+
+# Removing items from the set.
+friends.remove("Richard")  # Removes "Richard" from the set. Raises an error if the item does not exist.
+print(friends)  # Prints the updated set.
+
+friends.discard("Joe")  # Removes "Joe" from the set. Does not raise an error if the item does not exist.
+print(friends)  # Prints the updated set.
+
+# Creating a set of animals.
+animals = {"dog", "cat", "bird", "fish", "elephant", "lion", "tiger", "bear", "monkey", "giraffe", "lion"}
+print(animals)  # Prints the set. Duplicate items (e.g., "lion") will be removed.
+
+# Sets automatically ignore duplicate values.
+print(len(animals))  # Prints the number of unique items in the set.
+print(type(animals))  # Prints the type of the object (set).
+
+# Set items can be of any data type.
+speed = {15, 21, 32, 43, 54}  # A set containing integers.
+print(speed)
+
+alive = {True, False}  # A set containing boolean values.
+print(alive)
+
+cars = {"Toyota Camry", "Honda Civic", "Ford Mustang", "Tesla Model 3", "BMW X5"}  # A set containing strings.
+print(cars)
+
+loan_rates = {3.5, 4.2, 5.1, 6.8, 7.5}  # A set containing float values.
+print(loan_rates)
+
+# Sets can contain mixed data types.
+information = {"Honda Civic", 54, True, 7.5}  # A set with mixed data types.
+print(information)
+
+# Differences between sets and dictionaries:
+# - **Sets**: Store only unique values and have no key-value pairs.
+# - **Dictionaries**: Store key-value pairs where keys must be unique, but values can be duplicated.
